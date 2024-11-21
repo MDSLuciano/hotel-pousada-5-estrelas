@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel e Pousada 5 Estrelas</title>
+
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="bg-blackgreen text-white text-opacity-70 p-5">
+            <nav class="flex justify-between">
+                <a class="flex" href="#">
+                    <img class="w-5" src="./isotipo.png" alt="Isotipo Desbrave Borborema">
+                    <h1 class="text-1xl font-bold">Hotel e Pousada 5 Estrelas</h1>
+                </a>
+                <div class="flex items-center gap-10 text-1xl">
+                    <a href="#" class="font-bold">Início</a>
+                    <a href="./sobre.html">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div id="hero-image"></div>
+        <div id="hero-content">
+            <h2 data-aos="fade-up" data-aos-delay="100">Hotel e Pousada 5 Estrelas</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Aonde você deseja se hospedar, nós oferecemos os melhores
+                serviços</p>
+
+            <div data-aos="flip-up" data-aos-delay="150">
+                <img class="isotipo-flutuante" src="./isotipo.png" alt="Isotipo Hotel e Pousada"
+                    class="isotipo-flutuante">
+            </div>
+        </div>
+    </section>
+
+
+    <main class="p-10 bg-gray-100 text-green">
+        <div class="container mx-auto" data-aos="fade-up" data-aos-delay="50">
+            <div class="margin-auto text-center">
+                <h2 class="text-2xl m-5 p-2 font-bold">Acomodações</h2>
+                <p class="text-justify-center m-10">Experimente a tranquilidade dos nossos quartos, com opções de duas
+                    camas de solteiro, uma cama de
+                    solteiro e uma cama Queen, ou a exclusividade de uma cama Queen com banheiro suíte. Cada quarto foi
+                    cuidadosamente equipado com TV de ecrã plano, roupeiro espaçoso, casa de banho privativa, roupas de
+                    cama
+                    de alta qualidade e toalhas macias. Além disso, todos os nossos quartos oferecem a conveniência de
+                    um
+                    micro-ondas. Venha vivenciar um conforto inigualável em um ambiente acolhedor e sofisticado.</p>
+            </div>
+            <section class="p-10 bg-white">
+                <div>
+                    <div class="swiper swiper1" data-aos="flip-up" data-aos-delay="50">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide p1">
+                                <img src="assets/quartos/quarto1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quarto2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quarto2camasolteiro.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quartocamacasalesolteiro.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quartocomtv.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quartosolteiro2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/quartos/quartotv2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper swiper2 mt-10" data-aos="flip-down" data-aos-delay="250">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p1">
+                            <img src="assets/banheiro1.jpg">
+                        </div>
+                        <div class="swiper-slide w-full">
+                            <img src="assets/banheiro2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/cozinha.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/cozinha2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/mesa.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="flex justify-center mt-10">
+
+                <button
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                onclick="openWhatsApp()">
+                Enviar mensagem no WhatsApp
+                </button>
+            </div>
+
+
+            
+
+    </main>
+
+    <img src="whatsapp-icon.png" class="whatsapp-fixed" alt="WhatsApp" onclick="openWhatsApp()">
+
+
+    <footer class="flex justify-center bg-black text-white p-3">
+        <p>&copy; <a href="https://www.instagram.com/hotel_pousada_5estrela/" target="_blank">2024 Hotel e Pousada 5 Estrelas.</a>Todos os direitos reservados, criado por <a
+                href="https://www.instagram.com/lucianoomachados/" target="_blank">Luciano Machado</a>.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+
+        const swiperSettings = {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            breakpoints: {
+                1100: {
+                    slidesPerView: 4
+                },
+                768: {
+                    slidesPerView: 3,
+                }
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            allowTouchMove: false,
+        }
+
+        const swiper1 = new Swiper(".swiper1", swiperSettings);
+
+        const swiper2 = new Swiper(".swiper2", {
+            ...swiperSettings,
+            autoplay: {
+                ...swiperSettings.autoplay,
+                reverseDirection: true,
+            }
+        });
+
+        const swiper3 = new Swiper(".swiper3", swiperSettings);
+
+        function swiperAutoplayStart() {
+            swiper1.autoplay.start();
+            swiper2.autoplay.start();
+            swiper3.autoplay.start();
+        }
+
+        function swiperAutoplayStop() {
+            swiper1.autoplay.stop();
+            swiper2.autoplay.stop();
+            swiper3.autoplay.stop();
+        }
+
+        window.onload = () => {
+            window.addEventListener("focus", swiperAutoplayStart);
+            window.addEventListener("blur", swiperAutoplayStop);
+            document.addEventListener("visibilitychange", () => {
+                if (document.visibilityState === "visible") {
+                    swiperAutoplayStart();
+                } else {
+                    swiperAutoplayStop();
+                }
+            });
+        }
+
+        function openWhatsApp() {
+            const numero = "+5516997579857"; // insira o número do destinatário
+            const mensagem = "Olá, gostaria de fazer uma reserva no hotel!"; // insira a mensagem
+            const url = `https://wa.me/${numero}?text=${mensagem}`;
+
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+
+</html>
