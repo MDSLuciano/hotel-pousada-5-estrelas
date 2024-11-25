@@ -25,11 +25,9 @@
             <nav class="flex justify-between">
                 <a class="flex" href="#">
                     <img class="w-5" src="./isotipo.png" alt="Isotipo Desbrave Borborema">
-                    <h1 class="text-1xl font-bold">Hotel e Pousada 5 Estrelas</h1>
+                    <h1 class="text-1xl font-bold">Hotel e Pousada 5 Estrela</h1>
                 </a>
                 <div class="flex items-center gap-10 text-1xl">
-                    <a href="#" class="font-bold">Início</a>
-                    <a href="./sobre.html">Contato</a>
                 </div>
             </nav>
         </div>
@@ -38,9 +36,8 @@
     <section id="hero">
         <div id="hero-image"></div>
         <div id="hero-content">
-            <h2 data-aos="fade-up" data-aos-delay="100">Hotel e Pousada 5 Estrelas</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Aonde você deseja se hospedar, nós oferecemos os melhores
-                serviços</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Hotel e Pousada 5 Estrela</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Nada melhor que o conforto da sua casa.</p>
 
             <div data-aos="flip-up" data-aos-delay="150">
                 <img class="isotipo-flutuante" src="./isotipo.png" alt="Isotipo Hotel e Pousada"
@@ -92,6 +89,7 @@
                     </div>
                 </div>
 
+
                 <div class="swiper swiper2 mt-10" data-aos="flip-down" data-aos-delay="250">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide p1">
@@ -112,94 +110,27 @@
                     </div>
                 </div>
             </section>
-            
+
             <div class="flex justify-center mt-10">
 
-                <button
+            <button
                 class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 onclick="openWhatsApp()">
-                Enviar mensagem no WhatsApp
-                </button>
+                    Enviar mensagem no WhatsApp
+            </button>
             </div>
-
-
-            
-
     </main>
 
     <img src="whatsapp-icon.png" class="whatsapp-fixed" alt="WhatsApp" onclick="openWhatsApp()">
 
 
     <footer class="flex justify-center bg-black text-white p-3">
-        <p>&copy; <a href="https://www.instagram.com/hotel_pousada_5estrela/" target="_blank">2024 Hotel e Pousada 5 Estrelas.</a>Todos os direitos reservados, criado por <a
+        <p>&copy; <a href="https://www.instagram.com/hotel_pousada_5estrela/" target="_blank">2024 Hotel e Pousada 5
+                Estrelas.</a>Todos os direitos reservados, criado por <a
                 href="https://www.instagram.com/lucianoomachados/" target="_blank">Luciano Machado</a>.</p>
     </footer>
 
-    <script>
-        AOS.init();
-
-        const swiperSettings = {
-            slidesPerView: 2,
-            spaceBetween: 0,
-            breakpoints: {
-                1100: {
-                    slidesPerView: 4
-                },
-                768: {
-                    slidesPerView: 3,
-                }
-            },
-            loop: true,
-            autoplay: {
-                delay: 3000,
-            },
-            allowTouchMove: false,
-        }
-
-        const swiper1 = new Swiper(".swiper1", swiperSettings);
-
-        const swiper2 = new Swiper(".swiper2", {
-            ...swiperSettings,
-            autoplay: {
-                ...swiperSettings.autoplay,
-                reverseDirection: true,
-            }
-        });
-
-        const swiper3 = new Swiper(".swiper3", swiperSettings);
-
-        function swiperAutoplayStart() {
-            swiper1.autoplay.start();
-            swiper2.autoplay.start();
-            swiper3.autoplay.start();
-        }
-
-        function swiperAutoplayStop() {
-            swiper1.autoplay.stop();
-            swiper2.autoplay.stop();
-            swiper3.autoplay.stop();
-        }
-
-        window.onload = () => {
-            window.addEventListener("focus", swiperAutoplayStart);
-            window.addEventListener("blur", swiperAutoplayStop);
-            document.addEventListener("visibilitychange", () => {
-                if (document.visibilityState === "visible") {
-                    swiperAutoplayStart();
-                } else {
-                    swiperAutoplayStop();
-                }
-            });
-        }
-
-        function openWhatsApp() {
-            const numero = "+5516997579857"; // insira o número do destinatário
-            const mensagem = "Olá, gostaria de fazer uma reserva no hotel!"; // insira a mensagem
-            const url = `https://wa.me/${numero}?text=${mensagem}`;
-
-            window.open(url, "_blank");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
