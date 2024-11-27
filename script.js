@@ -28,17 +28,22 @@ const swiper2 = new Swiper(".swiper2", {
     }
 });
 
+
+const swiperFullScreen = new Swiper(".swiper-fullscreen", {
+    ...swiperSettings,
+    slidesPerView: 1,
+});
+
 function swiperAutoplayStart() {
     swiper1.autoplay.start();
     swiper2.autoplay.start();
-    swiper3.autoplay.start();
 }
 
 function swiperAutoplayStop() {
     swiper1.autoplay.stop();
     swiper2.autoplay.stop();
-    swiper3.autoplay.stop();
 }
+
 
 window.onload = () => {
     window.addEventListener("focus", swiperAutoplayStart);
@@ -52,31 +57,16 @@ window.onload = () => {
     });
 }
 
-function openWhatsApp() {
+function openWhatsApp(room="") {
     const numero = "+5516997118099"; // insira o número do destinatário
-    const mensagem = "Olá, gostaria de fazer uma reserva no hotel!"; // insira a mensagem
+    let mensagem = "Olá, gostaria de fazer uma reserva no hotel!"; // insira a mensagem
+    if (!room === "") {
+        mensagem = `Olá, gostaria de fazer uma reserva para o quarto ${room}!`;
+    }
+
     const url = `https://wa.me/${numero}?text=${mensagem}`;
 
     window.open(url, "_blank");
 }
 
-const carouselInner = document.querySelector('.carousel-inner');
- const paginationButtons = document.querySelectorAll('.pagination button');
-  let currentIndex = 0;
-   function updateCarousel() { 
-    const images = carouselInner.querySelectorAll('img');
-        images.forEach((img, index) => { 
-            img.classList.toggle('active', index === currentIndex);
-        });
-        paginationButtons.forEach((button, index) => {
-            button.classList.toggle('active', index === currentIndex);
-        });
-    }
-    paginationButtons.forEach((button, index) => {
-        button.addEventListener('click', () => { currentIndex = index;
-            updateCarousel();
-        });
-    });
-    updateCarousel();
-    window.addEventListener('resize', updateCarousel);
 
