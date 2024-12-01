@@ -1,3 +1,5 @@
+
+
 AOS.init();
 
 const swiperSettings = {
@@ -29,11 +31,6 @@ const swiper2 = new Swiper(".swiper2", {
 });
 
 
-const swiperFullScreen = new Swiper(".swiper-fullscreen", {
-    ...swiperSettings,
-    slidesPerView: 1,
-});
-
 function swiperAutoplayStart() {
     swiper1.autoplay.start();
     swiper2.autoplay.start();
@@ -57,13 +54,13 @@ window.onload = () => {
     });
 }
 
-function openWhatsApp(room="") {
+function openWhatsApp(room = "") {
     const numero = "+5516997118099"; // insira o número do destinatário
     let mensagem = "Olá, gostaria de fazer uma reserva no hotel!"; // insira a mensagem
-    if (!room === "") {
-        mensagem = `Olá, gostaria de fazer uma reserva para o quarto ${room}!`;
-    }
 
+    if (room !== "") {
+        mensagem = `Olá, gostaria de fazer uma reserva para o ${room}!`;
+    }
     const url = `https://wa.me/${numero}?text=${mensagem}`;
 
     window.open(url, "_blank");

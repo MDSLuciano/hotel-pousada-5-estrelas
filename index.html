@@ -4,6 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TPCGQB9V');
+
+    </script>
+    <!-- End Google Tag Manager -->
     <title>Hotel e Pousada 5 Estrelas</title>
 
     <link rel="icon" href="./favicon.png">
@@ -14,18 +29,25 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Icones da Cloud Flare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPCGQB9V" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="bg-blackgreen text-white text-opacity-70 p-5">
             <nav class="flex justify-between">
                 <a class="flex" href="#">
                     <img class="w-5" src="./isotipo.png" alt="Isotipo Desbrave Borborema">
-                    <h1 class="text-1xl font-bold">Hotel e Pousada 5 Estrela</h1>
+                    <h1 class="text-2xl font-bold pl-4">Hotel e Pousada 5 Estrela</h1>
                 </a>
                 <div class="flex items-center gap-10 text-1xl">
                 </div>
@@ -40,8 +62,7 @@
             <p data-aos="fade-up" data-aos-delay="100">Nada melhor que o conforto da sua casa.</p>
 
             <div data-aos="flip-up" data-aos-delay="150">
-                <img class="isotipo-flutuante" src="./isotipo.png" alt="Isotipo Hotel e Pousada"
-                    class="isotipo-flutuante">
+                <img class="isotipo-flutuante" src="./isotipo.png" alt="Isotipo Hotel e Pousada">
             </div>
         </div>
     </section>
@@ -50,114 +71,167 @@
     <main class="p-10 bg-gray-100 text-green">
         <div class="container mx-auto" data-aos="fade-up" data-aos-delay="50">
             <div class="margin-auto text-center">
-                <h2 class="text-2xl m-5 p-2 font-bold">Acomodações</h2>
-                <p class="text-justify-center m-10">Experimente a tranquilidade dos nossos quartos, com opções de duas
-                    camas de solteiro, uma cama de
-                    solteiro e uma cama Queen, ou a exclusividade de uma cama Queen com banheiro suíte. Cada quarto foi
-                    cuidadosamente equipado com TV de tela plana, roupeiro espaçoso, casa de banho privativa, roupas de
-                    cama
-                    de alta qualidade e toalhas macias. Além disso, todos os nossos quartos oferecem a conveniência de
-                    um
-                    micro-ondas. Venha vivenciar um conforto inigualável em um ambiente acolhedor e sofisticado.</p>
+                <h2 class="text-2xl m-5 p-2 font-bold">Seja bem-vindo ao Hotel e Pousada 5 Estrela</h2>
+                <p class="text-justify-center m-10">Bem-vindo ao <strong>Hotel e Pousada 5 Estrela</strong>, o destino
+                    ideal para quem
+                    busca conforto e conveniência na charmosa cidade de <strong>Borborema - SP.</strong> Nossos quartos
+                    são espaçosos e
+                    bem equipados, garantindo uma estadia inesquecível e relaxante para todos os nossos hóspedes.
+                    Todos os quartos incluem uma TV, um roupeiro, uma casa de banho privativa, um micro-ondas e Wi-Fi
+                    gratuito para que você se mantenha conectado durante sua visita. No <strong>Hotel e Pousada 5
+                        Estrela</strong>,
+                    garantimos que nossos quartos proporcionarão a você o máximo de conforto e comodidade. Venha nos
+                    visitar em <strong>Borborema - SP</strong> e desfrute do melhor em hospitalidade.</p>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="250">
-            <h2 class="text-2xl m-5 p-2 font-bold">Quartos:</h2>
-            <section class="rooms">
-                <article class="room" data-aos="flip-left" data-aos-delay="150">
-                    <img src="assets/quartos/quarto1.jpg" alt="Quarto de Casal">
-
-                    <div>
-                        <h3>Quarto de Casal</h3>
-                        <p>Aproveite a comodidade do quarto de casal com banheiro privativo e TV.</p>
-                        <button onclick="openWhatsApp()">Reserve Agora</button>
+                <h2 class="text-2xl m-5 p-2 font-bold text-center">Contando com as seguintes comodidades em todos os quartos:</h2>
+                <section class="mb-10 p-8 bg-white border border-gray-200 rounded-lg shadow">
+                    <div class="flex flex-wrap flex-row">
+                        <div class="feature w-full md:w-1/2 lg:w-1/3"> 
+                            <i class="icon fa fa-tv"></i> 
+                            <span>Smart Tv 32</span> 
+                        </div>
+                        <div class="feature w-full md:w-1/2 lg:w-1/3"> 
+                            <i class="icon fa fa-shower"></i> 
+                            <span>Banheiro Privativo</span> 
+                        </div>
+                        <div class="feature w-full md:w-1/2 lg:w-1/3"> 
+                            <i class="icon fa fa-wifi"></i> 
+                            <span>Wi-Fi Grátis</span> 
+                        </div>
+                        <div class="feature w-full md:w-1/2 lg:w-1/3">  
+                            <i class="icon fa fa-wind"></i> 
+                            <span>Ar Condicionado</span>
+                        </div>
+                        <div class="feature w-full md:w-1/2 lg:w-1/3"> 
+                            <i class="icon microwave"></i>
+                            <span>Microondas</span> 
+                        </div>
+                        <div class="feature w-full md:w-1/2 lg:w-1/3"> 
+                            <i class="icon refrigerator"></i>
+                            <span>Frigobar</span> 
+                        </div>
                     </div>
-                </article>
-                <article class="room" data-aos="flip-left" data-aos-delay="150">
-                    <img src="assets/quartos/quarto2camasolteiro.jpg" alt="Praça do Jardim Herculандia">
+                </section>
+                <section class="rooms">
+                    <article class="room" data-aos="flip-left" data-aos-delay="150">
+                        <img src="assets/rooms/quarto1.jpg" alt="Quarto de Casal">
+                        
 
+                        <div>
+                            <h3 class="font-bold">Quarto de Casal</h3>
+                               <!-- <div class="featureRoom mb-5 w-full md:w-1/2 lg:w-1/3"> 
+                                    <i class="fas fa-bed p-1"></i> 
+                                    <span>Cama Queen</span>
+                                </div> -->
+                            <p>Para quem busca maior conforto, oferecemos um quarto com uma cama Queen e um banheiro
+                                suíte. Este quarto também dispõe de uma TV, um roupeiro, uma casa de banho
+                                privativa, um
+                                micro-ondas e um frigobar.</p>
+                            <button onclick="openWhatsApp('Quarto de Casal')">Reserve Agora</button>
+                        </div>
+                    </article>
+                    <article class="room" data-aos="flip-left" data-aos-delay="150">
+                        <img src="assets/rooms/quarto2camasolteiro.jpg" alt="Quarto de Casal">
+
+                        <div>
+                            <h3 class="font-bold">Quarto de Solteiro</h3>
+                            <!-- <div class="featureRoom mb-5 justify-between w-full md:w-1/2 lg:w-1/3"> 
+                                    <i class="fas fa-bed p-1"></i> 
+                                    <span>Cama de Solteiro</span>
+                            </div> -->
+                            <p>Equipado com duas camas de solteiro, uma TV, um roupeiro, uma casa de banho privativa, um
+                                micro-ondas e um frigobar para sua praticidade.</p>
+                            <button onclick="openWhatsApp('Quarto de Solteiro')">Reserve Agora</button>
+                        </div>
+                    </article>
+                    <article class="room" data-aos="flip-left" data-aos-delay="150">
+                        <img src="assets/rooms/quartocamacasalesolteiro.jpg" alt="Quarto Solteiro">
+
+                        <div>
+                            <h3 class="font-bold">Quarto com cama de Casal e Solteiro</h3>
+                               <!-- <div class="featureRoom mb-5 w-full md:w-1/2 lg:w-1/3"> 
+                                    <i class="fas fa-bed p-1"></i> 
+                                    <span>Cama de Solteiro</span>
+                                    <i class="fas fa-bed p-1 ml-2"></i> 
+                                    <span>Cama Queen</span>
+                                </div> -->
+                            
+                            <p>Este quarto conta com uma cama de solteiro e uma cama Queen, uma TV, um roupeiro, uma
+                                casa de banho privativa, um micro-ondas e um frigobar.</p>
+                            <button onclick="openWhatsApp('Quarto com cama de Casal e Solteiro')">Reserve Agora</button>
+                        </div>
+                    </article>
+                </section>
+
+
+                <h2 class="text-2xl m-5 p-2 font-bold">Quartos, Suites e Banheiros:</h2>
+
+                <section class="mt-5 p-10 bg-white carousel">
                     <div>
-                        <h3>Quarto de Solteiro</h3>
-                        <p>Aproveite a comodidade do quarto de solteiro com banheiro privativo e TV.</p>
-                        <button onclick="openWhatsApp()">Reserve Agora</button>
+                        <div class="swiper swiper1" data-aos="flip-up" data-aos-delay="50">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p1">
+                                    <img src="assets/rooms/quarto1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quarto2.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quarto2camasolteiro.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quartocamacasalesolteiro.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quartocomtv.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quartosolteiro2.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/rooms/quartotv2.jpg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="room" data-aos="flip-left" data-aos-delay="150">
-                    <img src="assets/quartos/quartocamacasalesolteiro.jpg" alt="Quarto Solteiro">
-
-                    <div>
-                        <h3>Quarto com cama de Casal e Solteiro</h3>
-                        <p> Aproveite a comodidade do quarto com cama de casal e solteiro com banheiro privativo e TV.</p>
-                        <button onclick="openWhatsApp()">Reserve Agora</button>
-                    </div>
-                </article>
-            </section>
 
 
-            <section class="p-10 bg-white">
-                <div>
-                    <div class="swiper swiper1" data-aos="flip-up" data-aos-delay="50">
+                    <div class="swiper swiper2 mt-10" data-aos="flip-down" data-aos-delay="250">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide p1">
-                                <img src="assets/quartos/quarto1.jpg">
+                                <img src="assets/acommadations/banheiro1.jpg">
+                            </div>
+                            <div class="swiper-slide w-full">
+                                <img src="assets/acommadations/banheiro2.jpg">
+                            </div>
+                            <div class="swiper-slide ">
+                                <img src="assets/acommadations/cozinha.jpg">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/quartos/quarto2.jpg">
+                                <img src="assets/acommadations/cozinha2.jpg">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/quartos/quarto2camasolteiro.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/quartos/quartocamacasalesolteiro.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/quartos/quartocomtv.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/quartos/quartosolteiro2.jpg">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/quartos/quartotv2.jpg">
+                                <img src="assets/acommadations/mesa.jpg">
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <div class="flex justify-center mt-10">
+                    <button
+                        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        onclick="openWhatsApp()">
+                        Enviar mensagem no WhatsApp
+                    </button>
                 </div>
-
-
-                <div class="swiper swiper2 mt-10" data-aos="flip-down" data-aos-delay="250">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide p1">
-                            <img src="assets/banheiro1.jpg">
-                        </div>
-                        <div class="swiper-slide w-full">
-                            <img src="assets/banheiro2.jpg">
-                        </div>
-                        <div class="swiper-slide ">
-                            <img src="assets/cozinha.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/cozinha2.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/mesa.jpg">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="flex justify-center mt-10">
-                <button
-                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    onclick="openWhatsApp()">
-                    Enviar mensagem no WhatsApp
-                </button>
-            </div>
     </main>
 
     <img src="whatsapp-icon.png" class="whatsapp-fixed" alt="WhatsApp" onclick="openWhatsApp()">
 
     <div class="fullscreen-overlay" id="fullscreen-overlay">
-        <div class="swiper-container fullscreen-carousel"> 
+        <div class="swiper-container fullscreen-carousel">
             <div class="swiper-wrapper">
             </div>
         </div>
